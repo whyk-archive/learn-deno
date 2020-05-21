@@ -1,9 +1,9 @@
 import { serve } from 'https://deno.land/std@0.50.0/http/server.ts';
+import { APP_PORT } from './utils/config.ts';
 
-const PORT_NUM = 8000
 
-const app = serve({ port: PORT_NUM });
-console.log(`http://localhost:${PORT_NUM}`);
+const app = serve({ port: APP_PORT });
+console.log(`http://localhost:${APP_PORT}`);
 
 for await (const req of app) {
   req.respond({ body: 'Hello, world!!\n'});
