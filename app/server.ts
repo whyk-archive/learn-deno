@@ -1,5 +1,4 @@
-import { serve } from 'https://deno.land/std@0.50.0/http/server.ts';
-import { extractObjectValue } from 'https://github.com/windchime-yk/deno-util/raw/master/util.ts';
+import { serve, extractObjectValue } from './utils/deps.ts'
 import { APP_PORT } from './utils/config.ts';
 
 interface User {
