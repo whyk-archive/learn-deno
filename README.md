@@ -21,9 +21,12 @@ scoop install deno
 
 ### コードの起動
 ``` bash
-deno run --allow-net app/server.ts
+deno run --allow-read --allow-env --allow-net app/server.ts
 ```
-`--allow-net`は、ネットワークアクセスの許可を意味する。これを書かないと、以下のエラーメッセージが出力される。
-``` bash
-error: Uncaught PermissionDenied: network access to "0.0.0.0:8000", run again with the --allow-net flag
-```
+
+各フラグの意味は以下。
+- `--allow-read`：ファイル読み込みの許可
+- `--allow-env`：環境変数読み込みの許可
+- `--allow-net`：ネットワークアクセスの許可
+
+各フラグを書き忘れると、エラーが発生して実行されない。
