@@ -7,7 +7,7 @@ Node.jsの作者が、Node.jsでの反省点を踏まえて制作したもう一
 2020年5月13日に、v1.0.0がリリースされた。
 
 ## VS Code拡張機能
-[vscode-deno](https://marketplace.visualstudio.com/items?itemName=justjavac.vscode-deno)
+[Deno](https://marketplace.visualstudio.com/items?itemName=denoland.vscode-deno)
 
 ## サンプルコードの起動方法
 ### Denoのインストール
