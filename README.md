@@ -21,7 +21,7 @@ scoop install deno
 
 ### コードの起動
 ``` bash
-deno run --allow-read --allow-env --allow-net app/server.ts
+deno run --allow-read --allow-env --allow-net app/server.tsx
 ```
 
 各フラグの意味は以下。
