@@ -1,9 +1,12 @@
 import { WebView } from "https://deno.land/x/webview/mod.ts"; // utils/deps.tsに集約するとエラーが出るため個別import
 
+const OS = Deno.build.os
+
 const html = `
   <html>
   <body>
     <h1>Hello Deno!!</h1>
+    <p>${OS}</p>
   </body>
   </html>
 `;
