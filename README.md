@@ -19,14 +19,16 @@ brew install deno
 scoop install deno
 ```
 
+### Denonのインストール
+著名なDenoの開発モジュール。  
+サードパーティモジュールであり、DenoにおけるNodemonを目指したもの。
+
+``` bash
+deno install -qAf --unstable https://deno.land/x/denon/denon.ts
+``` 
+
 ### コードの起動
 ``` bash
-deno run --allow-read --allow-env --allow-net app/server.tsx
+denon server
+denon webview
 ```
-
-各フラグの意味は以下。
-- `--allow-read`：ファイル読み込みの許可
-- `--allow-env`：環境変数読み込みの許可
-- `--allow-net`：ネットワークアクセスの許可
-
-各フラグを書き忘れると、エラーが発生して実行されない。
