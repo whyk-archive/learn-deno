@@ -14,6 +14,15 @@ const config: DenonConfig = {
       unstable: true,
       watch: true,
     },
+    runner: {
+      cmd: "deno run app/runner.ts",
+      desc: "Run the Deno.run test",
+      allow: ["run"],
+      watch: false,
+    },
+    testes: {
+      cmd: "node -v"
+    }
   },
 };
 
